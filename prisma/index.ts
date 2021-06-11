@@ -27,6 +27,7 @@ async function create() {
   await prisma.user.create({
     data: {
       name: "Alice",
+      jobTitle: "abc",
       email: "alice@prisma.io",
       posts: {
         create: { title: "Hello world" },
