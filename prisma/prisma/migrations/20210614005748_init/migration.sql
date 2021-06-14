@@ -23,6 +23,7 @@ CREATE TABLE "Profile" (
 -- CreateTable
 CREATE TABLE "User" (
     "id" SERIAL NOT NULL,
+    "jobTitle" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "name" TEXT,
 

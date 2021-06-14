@@ -3,7 +3,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 async function main() {
-  //   await create();
+  await create();
   //   await update();
 
   const allUsers = await prisma.user.findMany({
@@ -27,7 +27,7 @@ async function create() {
   await prisma.user.create({
     data: {
       name: "Alice",
-      jobTitle: "abc",
+      title: "abc",
       email: "alice@prisma.io",
       posts: {
         create: { title: "Hello world" },
